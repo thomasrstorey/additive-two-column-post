@@ -1,0 +1,27 @@
+{
+	"name": "additive-two-column-post",
+	"description": "Allows posts to have two columns of content.",
+	"version": "0.1.0",
+	"type": "wordpress-plugin",
+	"keywords": [],
+	"homepage": "http://github.com/thomasrstorey",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Thomas R Storey",
+			"email": "thomas@thomasrstorey.net",
+		"homepage": "http://thomasrstorey.net",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.6"
+	},
+    "require-dev": {
+	    "antecedent/patchwork": "1.2.*",
+        "phpunit/phpunit"     : "*@stable",
+	    "brianium/paratest"   : "dev-master",
+        "10up/wp_mock"        : "dev-master"
+    }
+}
