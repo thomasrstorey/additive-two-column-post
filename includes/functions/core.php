@@ -65,6 +65,7 @@ function i18n() {
  */
 function init() {
 	do_action( 'additive_tcp_init' );
+	// register column post type
 	$labels = array(
         'name'               => _x( 'Columns', 'post type general name', 'additive_tcp' ),
         'singular_name'      => _x( 'Column', 'post type singular name', 'additive_tcp' ),
@@ -84,11 +85,12 @@ function init() {
 	register_post_type('additive_column', array(
 		'labels' => $labels,
 		'description' => 'Columns inserted as additional content for posts.',
-		'public' => true, // XXX: change to false for production
+		'public' => false,
 		'hierarchical' => false,
 		'capability_type' => 'post',
 		'supports' => array('title', 'editor', 'custom-fields')
 	));
+
 }
 
 /**
